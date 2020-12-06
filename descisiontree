@@ -8,3 +8,5 @@ https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClass
 log计算
 import math
 math.log(0.5,2)#后面的是底数
+
+参数min_samples_split,默认值为2，把节点一直分类，分到小于等于2为止。参数太小会导致过拟合。
