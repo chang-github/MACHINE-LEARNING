@@ -10,3 +10,6 @@ import math
 math.log(0.5,2)#后面的是底数
 
 参数min_samples_split,默认值为2，把节点一直分类，分到小于等于2为止。参数太小会导致过拟合。
+clf2=tree.DecisionTreeClassifier(min_samples_split=50)
+clf2=clf2.fit(features_train,lables_train)
+acc_min_samples_split_50=(clf2.predict(features_test)==labels_test).mean()
